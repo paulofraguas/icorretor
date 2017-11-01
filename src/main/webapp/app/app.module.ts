@@ -15,6 +15,10 @@ import { PietraGuard } from './comum/pietra.guard';
 import { UserModule } from './users/users.module';
 import {MenuModule,MenuItem} from 'primeng/primeng';
 
+import { ImovelModule } from './imovel/imovel.module';
+import { CorretorModule } from './corretor/corretor.module';
+import { FotoModule } from './foto/foto.module';
+import { PropostaModule } from './proposta/proposta.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
@@ -32,6 +36,10 @@ import {MenuModule,MenuItem} from 'primeng/primeng';
     AccordionModule, GrowlModule, DataListModule, ToolbarModule, ButtonModule, SplitButtonModule, PanelModule, MenuModule,
     UserModule,
 
+   ImovelModule,
+   CorretorModule,
+   FotoModule,
+   PropostaModule,
    /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
 
     AppRoutingModule

@@ -41,6 +41,12 @@ public class CacheConfiguration {
             cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.Imovel.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.Imovel.class.getName() + ".fotos", jcacheConfiguration);
+            cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.Imovel.class.getName() + ".propostas", jcacheConfiguration);
+            cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.Corretor.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.Foto.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.munif.fraguas.projects.icorretor.domain.Proposta.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

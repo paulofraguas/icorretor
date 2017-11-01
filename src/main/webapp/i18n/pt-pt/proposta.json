@@ -1,0 +1,24 @@
+{
+    "icorretorApp": {
+        "proposta" : {
+            "home": {
+                "title": "Propostas",
+                "createLabel": "Criar um(a) novo(a) Proposta",
+                "createOrEditLabel": "Criar ou editar um(a) Proposta"
+            },
+            "created": "A new Proposta is created with identifier {{ param }}",
+            "updated": "A Proposta is updated with identifier {{ param }}",
+            "deleted": "A Proposta is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Proposta {{ id }}?"
+            },
+            "detail": {
+                "title": "Proposta"
+            },
+            "valor": "Valor",
+            "dia": "Dia",
+            "observacao": "Observacao",
+            "imovel": "Imovel"
+        }
+    }
+}

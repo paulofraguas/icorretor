@@ -1,0 +1,32 @@
+{
+    "icorretorApp": {
+        "imovel" : {
+            "home": {
+                "title": "Imovels",
+                "createLabel": "Criar um(a) novo(a) Imovel",
+                "createOrEditLabel": "Criar ou editar um(a) Imovel"
+            },
+            "created": "A new Imovel is created with identifier {{ param }}",
+            "updated": "A Imovel is updated with identifier {{ param }}",
+            "deleted": "A Imovel is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Imovel {{ id }}?"
+            },
+            "detail": {
+                "title": "Imovel"
+            },
+            "codigoSub100": "Codigo Sub 100",
+            "endereco": "Endereco",
+            "bairro": "Bairro",
+            "descricao": "Descricao",
+            "tipo": "Tipo",
+            "preco": "Preco",
+            "areaConstruida": "Area Construida",
+            "areaTerreno": "Area Terreno",
+            "observacoes": "Observacoes",
+            "foto": "Foto",
+            "proposta": "Proposta",
+            "corretor": "Corretor"
+        }
+    }
+}

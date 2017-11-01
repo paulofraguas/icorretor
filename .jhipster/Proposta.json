@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "imovel",
+            "otherEntityName": "imovel",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "valor",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "dia",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "observacao",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171101004237",
+    "entityTableName": "proposta",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity Foto.
+    -->
+    <changeSet id="20171101004236-2" author="vicente">
+        <createTable tableName="foto_AUD">
+            <column name="REV" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="REVTYPE" type="TINYINT(3)"/>
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="active" type="BIT(1)"/>
+            <column name="cd" type="datetime(6)"/>
+            <column name="extra" type="VARCHAR(255)"/>
+            <column name="gi" type="VARCHAR(255)"/>
+            <column name="rights" type="INT"/>
+            <column name="ud" type="datetime(6)"/>
+            <column name="ui" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            
+            <column name="descricao" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="imagem" type="longblob">
+                <constraints nullable="true" />
+            </column>
+            <column name="imagem_content_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="imovel_id" type="VARCHAR(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+    
+</databaseChangeLog>

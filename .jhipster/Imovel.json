@@ -1,0 +1,66 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "foto",
+            "otherEntityName": "foto",
+            "otherEntityRelationshipName": "imovel"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "proposta",
+            "otherEntityName": "proposta",
+            "otherEntityRelationshipName": "imovel"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "corretor",
+            "otherEntityName": "corretor",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "codigoSub100",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "endereco",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "bairro",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descricao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "preco",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "areaConstruida",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "areaTerreno",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "observacoes",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171101004234",
+    "entityTableName": "imovel",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

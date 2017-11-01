@@ -24,6 +24,10 @@ export class AppComponent implements OnInit {
       label: 'Cadastros',
       items: [
         { label: 'Users', icon: 'fa-download', routerLink: ['./users'] },
+        { label: 'Imovel', icon: 'fa-download', routerLink: ['./imovel'] },
+        { label: 'Corretor', icon: 'fa-download', routerLink: ['./corretor'] },
+        { label: 'Foto', icon: 'fa-download', routerLink: ['./foto'] },
+        { label: 'Proposta', icon: 'fa-download', routerLink: ['./proposta'] },
         /* jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here */
       ]
     }

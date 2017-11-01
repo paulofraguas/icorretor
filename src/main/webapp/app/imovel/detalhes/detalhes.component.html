@@ -1,0 +1,29 @@
+<p-panel>
+    <p-header>
+        <div class="ui-helper-clearfix">
+            <span class="ui-panel-title">Imovel</span>
+            <p-splitButton [style]="{'float':'right'}" label="Salvar" (onClick)="salvar()" [model]="items"></p-splitButton>
+        </div>
+    </p-header>
+        <h3>CodigoSub100</h3>
+        <input id="codigoSub100" type="text" size="30" pInputText [(ngModel)]="selecionado.codigoSub100">
+        <h3>Endereco</h3>
+        <input id="endereco" type="text" size="30" pInputText [(ngModel)]="selecionado.endereco">
+        <h3>Bairro</h3>
+        <input id="bairro" type="text" size="30" pInputText [(ngModel)]="selecionado.bairro">
+        <h3>Descricao</h3>
+        <input id="descricao" type="text" size="30" pInputText [(ngModel)]="selecionado.descricao">
+        <h3>Tipo</h3>
+        <input id="tipo" type="text" size="30" pInputText [(ngModel)]="selecionado.tipo">
+        <h3>Preco</h3>
+        <input id="preco" type="number" size="30" pInputText [(ngModel)]="selecionado.preco">
+        <h3>AreaConstruida</h3>
+        <input id="areaConstruida" type="number" size="30" pInputText [(ngModel)]="selecionado.areaConstruida">
+        <h3>AreaTerreno</h3>
+        <input id="areaTerreno" type="number" size="30" pInputText [(ngModel)]="selecionado.areaTerreno">
+        <h3>Observacoes</h3>
+        <input id="observacoes" type="text" size="30" pInputText [(ngModel)]="selecionado.observacoes">
+        <h3>corretors</h3>
+        <p-dropdown [options]="listacorretors" [(ngModel)]="selecionado.corretor"></p-dropdown>
+
+</p-panel>

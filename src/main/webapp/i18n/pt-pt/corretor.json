@@ -1,0 +1,22 @@
+{
+    "icorretorApp": {
+        "corretor" : {
+            "home": {
+                "title": "Corretors",
+                "createLabel": "Criar um(a) novo(a) Corretor",
+                "createOrEditLabel": "Criar ou editar um(a) Corretor"
+            },
+            "created": "A new Corretor is created with identifier {{ param }}",
+            "updated": "A Corretor is updated with identifier {{ param }}",
+            "deleted": "A Corretor is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Corretor {{ id }}?"
+            },
+            "detail": {
+                "title": "Corretor"
+            },
+            "nome": "Nome",
+            "telefone": "Telefone"
+        }
+    }
+}

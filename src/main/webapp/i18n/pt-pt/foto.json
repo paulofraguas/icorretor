@@ -1,0 +1,23 @@
+{
+    "icorretorApp": {
+        "foto" : {
+            "home": {
+                "title": "Fotos",
+                "createLabel": "Criar um(a) novo(a) Foto",
+                "createOrEditLabel": "Criar ou editar um(a) Foto"
+            },
+            "created": "A new Foto is created with identifier {{ param }}",
+            "updated": "A Foto is updated with identifier {{ param }}",
+            "deleted": "A Foto is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Foto {{ id }}?"
+            },
+            "detail": {
+                "title": "Foto"
+            },
+            "descricao": "Descricao",
+            "imagem": "Imagem",
+            "imovel": "Imovel"
+        }
+    }
+}
