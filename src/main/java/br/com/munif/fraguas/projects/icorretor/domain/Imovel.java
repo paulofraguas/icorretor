@@ -48,6 +48,13 @@ public class Imovel extends BaseEntity {
     @Column(name = "area_terreno", precision=10, scale=2)
     private BigDecimal areaTerreno;
 
+    @Column(name = "latitude")
+    private BigDecimal latitude;
+
+    @Column(name = "longitude")
+    private BigDecimal longitude;
+
+
     @Column(name = "observacoes")
     private String observacoes;
 
@@ -257,6 +264,24 @@ public class Imovel extends BaseEntity {
         this.corretor = corretor;
         return this;
     }
+
+    public BigDecimal getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(BigDecimal latitude) {
+        this.latitude = latitude;
+    }
+
+    public BigDecimal getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(BigDecimal longitude) {
+        this.longitude = longitude;
+    }
+    
+    
 
     public void setCorretor(Corretor corretor) {
         this.corretor = corretor;

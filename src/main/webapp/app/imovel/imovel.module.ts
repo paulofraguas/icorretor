@@ -17,11 +17,15 @@ import { RoutingModule } from './routing.module';
 import { CrudComponent } from './crud/crud.component';
 import { ListaComponent } from './lista/lista.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [
     CommonModule, FormsModule, PanelModule,
     RoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA1WYuxbcU4Cop5-uUF_kCSHOpCuOPZq6Y'
+    }),
     BrowserAnimationsModule,
     AccordionModule, GrowlModule, DataListModule, ToolbarModule, ButtonModule, SplitButtonModule,DropdownModule,CalendarModule,
     DataTableModule, SharedModule, InputTextModule, AutoCompleteModule

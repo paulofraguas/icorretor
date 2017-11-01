@@ -62,6 +62,14 @@
             <column name="area_terreno" type="decimal(10,2)">
                 <constraints nullable="true" />
             </column>
+            
+            <column name="latitude" type="double">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="longitude" type="double">
+                <constraints nullable="true" />
+            </column>
 
             <column name="observacoes" type="varchar(255)">
                 <constraints nullable="true" />

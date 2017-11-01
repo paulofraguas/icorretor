@@ -18,7 +18,11 @@ export class SuperDetalhes {
       .switchMap((params: Params) => this.service.getOne(params['id']))
       .subscribe((objeto) => {
         this.selecionado = objeto;
+        this.recuperado();
       });
+  }
+  recuperado(){
+    
   }
   cancelar() {
     this.router.navigate(['../..'], { relativeTo: this.route });

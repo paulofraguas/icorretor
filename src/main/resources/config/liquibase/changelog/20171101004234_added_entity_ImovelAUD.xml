@@ -67,6 +67,15 @@
                 <constraints nullable="true" />
             </column>
 
+            <column name="latitude" type="double">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="longitude" type="double">
+                <constraints nullable="true" />
+            </column>
+
+
             <column name="observacoes" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
@@ -74,6 +83,8 @@
             <column name="corretor_id" type="VARCHAR(255)">
                 <constraints nullable="true" />
             </column>
+            
+            
 
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
         </createTable>
